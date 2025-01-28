@@ -1,4 +1,9 @@
 /* body */
+*{
+    scroll-behavior: smooth;
+
+}
+
 body {
     /* position: relative; */
     width: auto;
@@ -107,14 +112,14 @@ li>a {
 .description {
     color: rgb(156, 156, 156);
     font-family: IBM Plex Mono;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 30px;
     letter-spacing: 1%;
     text-align: left;
 }
 
-button {
+.btn-hero {
     position: static;
     width: 307.89px;
     height: 55px;
@@ -132,6 +137,7 @@ button {
     box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
     background: rgb(63, 142, 0);
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button>img {
@@ -160,13 +166,217 @@ button>img {
 
 /* client start */
 .client-wrapper {
-    background-color: burlywood;
     position: absolute;
     width: 920px;
     height: 60px;
     left: 180px;
-    top: 480px;
+    top: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-wrapper>img {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    left: 0;
+    right: 760px;
+    top: 0;
+    bottom: 0;
+}
+
+/* client end */
+
+/* case studies start */
+.case-container {
+    position: absolute;
+    width: 897px;
+    height: auto;
+    left: 208px;
+    top: 650px;
+
+    /* aligning items */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* cover text */
+.cover-text {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
 }
 
 
-/* client end */
+.cover-text>div>h2 {
+    color: rgb(8, 8, 8);
+    font-family: Raleway;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0px;
+}
+
+.cover-text>div>p {
+    color: rgb(156, 156, 156);
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+/* All cases */
+.cases {
+    margin-top: 50px;
+    width: 892px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.case-content {
+    height: 250px;
+    width: 47%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.case-tag {
+    /* can add in future */
+}
+
+.case-tag .span-1 {
+    background: rgb(255, 246, 233);
+    border-radius: 60px;
+    padding: 7px 12px;
+    color: rgb(255, 162, 23);
+    font-family: IBM Plex Mono;
+
+}
+
+.case-tag .span-2 {
+    background: rgb(208, 230, 255);
+    border-radius: 60px;
+    padding: 7px 12px;
+    color: rgb(0, 10, 255);
+    font-family: IBM Plex Mono;
+}
+
+.case-tag .span-3 {
+    background: rgb(224, 255, 248);
+    border-radius: 60px;
+    padding: 7px 12px;
+    color: rgb(42, 176, 144);
+    font-family: IBM Plex Mono;
+}
+
+
+.case-name {
+    /* can add in future */
+}
+
+.case-name h3 {
+    margin: 0px;
+    color: rgb(8, 8, 8);
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.case-text {
+    margin-top: -20px;
+}
+
+.case-text p {
+    color: rgb(156, 156, 156);
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0px;
+}
+
+.case-btn {
+    /* can add in future */
+}
+
+.btn1 {
+    width: 189.89px;
+    height: 38px;
+    border-radius: 4px;
+    background: rgb(255, 162, 23);
+    padding: 10px 24px 10px 24px;
+    color: rgb(255, 255, 255);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 700;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 189.89px;
+    height: 38px;
+    border-radius: 4px;
+    background: rgb(0, 10, 255);
+    padding: 10px 24px 10px 24px;
+    color: rgb(255, 255, 255);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 700;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn3 {
+    width: 189.89px;
+    height: 38px;
+    border-radius: 4px;
+    background: rgb(42, 176, 144);
+    padding: 10px 24px 10px 24px;
+    color: rgb(255, 255, 255);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 700;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+/* custom images */
+.case-image {
+    height: 250px;
+    width: 47%;
+    border-radius: 6px;
+}
+
+.img1 {
+    background-image: url("./assets/cases/image1.png");
+    background-size: auto;
+}
+
+.img2 {
+    background-image: url("./assets/cases/image2.png");
+    background-size: auto;
+}
+
+.img3 {
+    background-image: url("./assets/cases/image3.png");
+    background-size: auto;
+}
+
+/* case studies end */
