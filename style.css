@@ -1,0 +1,172 @@
+/* body */
+body {
+    /* position: relative; */
+    width: auto;
+    height: auto;
+    background: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Start */
+header {
+    /* position: absolute; */
+    /* width: ;
+    height: ; */
+    height: 600px;
+    left: 0;
+    top: 0;
+    background-color: rgb(8, 8, 8);
+}
+
+/* navbar start */
+/* rectangle 1  */
+.rectangle-1 {
+    position: absolute;
+    width: 1110px;
+    height: 70px;
+    left: 85px;
+    top: 0;
+    border-radius: 0px 0px 8px 8px;
+    background: rgb(27, 27, 27);
+
+}
+
+/* top menu */
+.top-menu {
+    position: absolute;
+    width: 717px;
+    height: 18px;
+    left: 100px;
+    top: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    list-style: none;
+
+}
+
+li {
+    margin-right: 70px;
+}
+
+li>a {
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    font-family: IBM Plex Mono;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+/* social icons */
+.social-icons {
+    position: absolute;
+    width: 120px;
+    height: 1*px;
+    left: 920px;
+    top: 26px;
+
+    /* items sequence */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* navbar end */
+
+
+/* hero start */
+
+/* hero text */
+.hero-text {
+    position: absolute;
+    width: 578px;
+    height: 250px;
+    left: 180px;
+    top: 170px;
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.description {
+    color: rgb(156, 156, 156);
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+button {
+    position: static;
+    width: 307.89px;
+    height: 55px;
+    padding: 17px 50px 17px 50px;
+    color: rgb(255, 255, 255);
+
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0%;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(98, 186, 27);
+    border-radius: 4px;
+    box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+    background: rgb(63, 142, 0);
+    cursor: pointer;
+}
+
+button>img {
+    height: 10px;
+    width: 5.89px;
+    margin: 0px 7px;
+}
+
+
+/* hero image */
+.hero-image {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 800px;
+    top: 150px;
+
+    background-image: url("./assets/hero/pic.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+/* hero end */
+
+
+/* client start */
+.client-wrapper {
+    background-color: burlywood;
+    position: absolute;
+    width: 920px;
+    height: 60px;
+    left: 180px;
+    top: 480px;
+}
+
+
+/* client end */
